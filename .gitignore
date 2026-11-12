@@ -5,3 +5,9 @@ __pycache__/
 *.db
 *.sqlite
 *.sqlite3
+*.pem
+
+keys/ 
+
+logs/
+.pytest_cache/
