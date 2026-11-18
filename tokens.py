@@ -59,5 +59,5 @@ def decode_token(token: str | None) -> dict:
             issuer=ISSUER,
             options={"require": ["exp", "iat", "sub", "jti", "iss", "aud"]},
         )
-    except jwt.InvalidTokenError as exc:   # also covers expired tokens
+    except jwt.InvalidTokenError as exc:   
         raise InvalidToken(type(exc).__name__) from exc
